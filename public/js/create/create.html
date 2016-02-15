@@ -16,7 +16,7 @@
 		<label>Author</label>
 		<input type="text" class="form-control" placeholder="Author" ng-model="newPost.name" required />
 	</div>
-
+	{{newPost}}
 	<div class="form-group">
 		<label>Body</label>
 		<textarea type="text" class="form-control" placeholder="What are you trying to say?" ng-model="newPost.body" required /></textarea>
@@ -33,7 +33,7 @@
 		<h2>{{ newPost.title }}</h2>
 	</div>
 
-	<h3>Author: {{ newPost.username }}</h3>
+	<h3>Author: {{ newPost.author.username }}</h3>
 
 	<p>{{ newPost.body }}</p>
 </div>
